@@ -1,0 +1,316 @@
+% =========================
+% SEÇÃO 1 – INTRODUÇÃO
+% =========================
+
+\section{Introdução}
+
+% Slide de abertura da seção
+\begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}\insertsectionhead\par
+        \color{oxfordblue}\noindent\rule{10cm}{1pt} \\
+        \LARGE{\faLightbulbO}
+    \end{beamercolorbox}
+    \vfill
+\end{frame}
+
+% Slide: Da prudência ao Homo Economicus
+\subsection{Da prudência ao Homo Economicus}
+\begin{frame}{Da prudência ao \textit{Homo Economicus}}
+    \begin{itemize}
+        \item \textbf{Economia “pré-formal”:} de Adam Smith à economia política clássica, o ser humano aparece com paixões, hábitos, moral e limitações.
+        \item \textbf{Século XX:} a formalização neoclássica troca prudência por cálculo: agente maximizador, preferências estáveis, informação perfeita.
+        \item \textbf{Modelo canônico:} equilíbrio geral, expectativas “bem-comportadas” e um mundo em que errar é exceção, não regra.
+        \item Ideia implícita: se os indivíduos calculam direito, \textbf{o coletivo “herda” a racionalidade} — bastaria somar as decisões.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Começar lembrando que a economia não nasceu com o agente-robô dos livros de macro.
+% - Citar Smith (TMS) como exemplo de autor que leva a sério virtudes, paixões e limites cognitivos.
+% - Contrapor com o movimento de “limpeza” conceitual da teoria da escolha racional: tirar fricções, tirar ruídos, deixar só otimização.
+% - Enfatizar que isso foi útil matematicamente, mas plantou a semente da racionalidade plena como padrão da macro moderna.
+
+% Slide: Kahneman e o retorno da (i)racionalidade
+\subsection{Kahneman e o retorno da (i)racionalidade}
+\begin{frame}{Kahneman e o retorno da (i)racionalidade}
+    \begin{itemize}
+        \item \textbf{Herbert Simon (1955):} racionalidade limitada, custos de informação, regras de bolso em vez de ótimo perfeito.
+        \item \textbf{Kahneman \& Tversky:} heurísticas, vieses sistemáticos, \textit{prospect theory} — não erramos “por acaso”, erramos em padrão.
+        \item A economia comportamental mostra: \textbf{o humano real} é míope, avesso a perdas, enviesado, influenciável pelo enquadramento.
+        \item Paradoxo: incorporamos isso em micro, finanças, psicologia econômica… mas a macro \textbf{continua modelando o agente como se nada tivesse acontecido}.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Situa Simon como a primeira rachadura séria no ideal de racionalidade plena.
+% - Explicar em 1 minuto a ideia de heurísticas e vieses (âncora, disponibilidade, representatividade).
+% - Fazer o gancho: “Se os indivíduos são assim, por que nossos modelos macro ainda fingem que eles são calculadoras perfeitas?”
+
+% Slide: Quando os modelos param no tempo
+\subsection{Quando os modelos param no tempo}
+\begin{frame}{Quando os modelos param no tempo}
+    \begin{itemize}
+        \item A macro moderna consolida o pacote: \textbf{expectativas racionais + otimização intertemporal + equilíbrio geral dinâmico}.
+        \item Nasce o paradigma DSGE como \textit{língua franca} da macro de bancos centrais e academia.
+        \item A evidência comportamental avança, mas os modelos dominantes \textbf{relutam em atualizar a imagem do agente}.
+        \item Fica a pergunta: \textbf{como fazer macro que leve a sério a (i)racionalidade} sem jogar fora a estrutura de modelos dinâmicos?
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Descrever rapidamente o que é um DSGE: agentes otimizadores, mercados que se equilibram, choques exógenos.
+% - Lembrar que essa arquitetura foi muito útil, mas virou “doutrina oficial”.
+% - Conclusão da seção: a teoria de decisão evoluiu, mas a macro-modelagem ficou defasada. É aqui que entram os modelos baseados em agentes e o artigo que vamos analisar.
+
+% =========================
+% SEÇÃO 2 – DSGE EM XEQUE
+% =========================
+
+\section{DSGE em Xeque}
+
+\begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}\insertsectionhead\par
+        \color{oxfordblue}\noindent\rule{10cm}{1pt} \\
+        \LARGE{\faBalanceScale}
+    \end{beamercolorbox}
+    \vfill
+\end{frame}
+
+% Slide: DSGE em 30 segundos
+\subsection{DSGE em 30 segundos}
+\begin{frame}{DSGE em 30 segundos}
+    \begin{itemize}
+        \item \textbf{D}ynamic: horizonte intertemporal longo, decisões hoje afetam o futuro.
+        \item \textbf{S}tochastic: choques exógenos (tecnologia, política monetária, preferências).
+        \item \textbf{G}eneral \textbf{E}quilibrium: mercados se limpam, preços ajustam, não há desequilíbrios persistentes.
+        \item Agentes: normalmente representativos, com \textbf{expectativas racionais} e racionalidade plena.
+        \item Resultado: um modelo elegante, tratável mas que \textbf{empurra a complexidade e a irracionalidade para fora do quadro}.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Explicar com linguagem simples: “é o modelo em que todo mundo sabe tudo, otimiza tudo, e o economista acompanha a dança resolvendo equações”.
+% - Comentar que muitas versões modernas já tentam melhorar isso, mas o núcleo ainda é esse.
+
+% Slide: Quatro críticas centrais aos DSGE
+\subsection{Quatro críticas centrais aos DSGE}
+\begin{frame}{Quatro críticas centrais aos DSGE (visão ACE)}
+    \begin{itemize}
+        \item \textbf{Heterogeneidade ignorada:} agente representativo apaga diferenças de renda, tecnologia, informação e rede de interações.
+        \item \textbf{Desequilíbrio excluído:} foco em trajetórias de equilíbrio; crises, desemprego persistente e travamentos são difíceis de modelar.
+        \item \textbf{Complexidade domesticada:} linearização em torno de um ponto “ideal” pode matar dinâmicas não-lineares e efeitos de rede.
+        \item \textbf{Racionalidade plena:} expectativas racionais e otimização estrita, pouco espaço para heurísticas, aprendizado, erros sistemáticos.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Dizer que essas são exatamente as quatro críticas organizadas pelo artigo: heterogeneidade, desequilíbrio, complexidade e racionalidade.
+% - Já preparar o terreno para a próxima seção: os modelos baseados em agentes surgem tentando enfrentar essas quatro frentes ao mesmo tempo.
+
+% =========================
+% SEÇÃO 3 – MACRO-ACE
+% =========================
+
+\section{Macroeconomia Baseada em Agentes}
+
+\begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}\insertsectionhead\par
+        \color{oxfordblue}\noindent\rule{10cm}{1pt} \\
+        \LARGE{\faUsers}
+    \end{beamercolorbox}
+    \vfill
+\end{frame}
+
+% Slide: O que é macro-ACE?
+\subsection{O que é macro-ACE?}
+\begin{frame}{O que é macro-ACE?}
+    \begin{itemize}
+        \item \textbf{Agent-based Computational Economics (ACE):} simulações com muitos agentes heterogêneos que interagem em rede.
+        \item Cada agente segue \textbf{regras simples}: heurísticas de consumo, investimento, crédito, expectativas adaptativas.
+        \item A ênfase está em \textbf{fenômenos emergentes}: ciclos, crises, bolhas, desemprego — como propriedades do sistema.
+        \item Diferente do DSGE, não se assume equilíbrio geral a priori; desequilíbrios e ajustamentos fazem parte da dinâmica.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Comparar com “jogo de simulação”: programar famílias, firmas, bancos e deixar o sistema rodar.
+% - Ressaltar a ideia de emergência: o “macro” nasce das interações, não de uma equação agregada mágica.
+
+% Slide: Quatro famílias de modelos macro-ACE
+\subsection{Quatro famílias de modelos macro-ACE}
+\begin{frame}{Quatro famílias de modelos macro-ACE}
+    \begin{itemize}
+        \item \textbf{K\&S (Keynes \& Schumpeter):} firmas, bancos e inovação endógena; ciclos de negócios emergem de demanda, crédito e tecnologia.
+        \item \textbf{CATS:} foco em complexidade e redes financeiras; choques se propagam via encadeamentos produtivos e de crédito.
+        \item \textbf{EURACE:} “simulador” da economia europeia, com famílias, firmas, bancos e governo em múltiplas regiões.
+        \item \textbf{Strategy-Switching:} agentes alternam entre estratégias (fundamentalistas vs. chartistas), gerando bolhas e crashes endógenos.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Não entrar em detalhes técnicos; a ideia é mostrar a diversidade de programas de pesquisa.
+% - Explicar que todos respondem, cada um à sua maneira, às quatro críticas feitas aos DSGE.
+
+% Slide: O que esses modelos explicam?
+\subsection{O que esses modelos explicam?}
+\begin{frame}{O que esses modelos explicam?}
+    \begin{itemize}
+        \item \textbf{Ciclos de negócios endógenos:} sem precisar de grandes choques exógenos para gerar flutuações macro.
+        \item \textbf{Distribuições realistas:} tamanhos de firmas, produtividade, desemprego por região/setor, etc.
+        \item \textbf{Instabilidade financeira:} bolhas de crédito, cascatas de falência, crises sistêmicas como emergências de rede.
+        \item \textbf{Efeitos de política:} impacto de políticas fiscais e monetárias em ambientes com heterogeneidade e restrições de crédito.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Destacar que o artigo revê justamente evidências desse tipo: calibração, comparação de momentos, reprodução de “fatos estilizados”.
+% - Concluir: ACE não é só “brincadeira de computador”; é uma tentativa séria de modelar um mundo com racionalidade limitada.
+
+% ===========================================
+% SEÇÃO 4 – O ARTIGO: DILAVER, JUMP & LEVINE
+% ===========================================
+
+\section{Agent-based macroeconomics and DSGE models}
+
+\begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}\insertsectionhead\par
+        \color{oxfordblue}\noindent\rule{10cm}{1pt} \\
+        \LARGE{\faExchange}
+    \end{beamercolorbox}
+    \vfill
+\end{frame}
+
+% Slide: O projeto do artigo
+\subsection{O projeto do artigo}
+\begin{frame}{O projeto do artigo}
+    \begin{itemize}
+        \item Artigo de \textbf{Dilaver, Jump \& Levine (2018)}: “Agent-based macroeconomics and DSGE models: Where do we go from here?”.
+        \item \textbf{Objetivo central:} revisar e sintetizar a literatura de macro-ACE e conectá-la ao mundo DSGE.
+        \item Três blocos principais:
+        \begin{itemize}
+            \item Críticas ACE aos DSGE.
+            \item Principais modelos macro-ACE e seu desempenho empírico.
+            \item Modelos New Keynesian comportamentais e o NK “internally rational”.
+        \end{itemize}
+        \item Pergunta de fundo: \textbf{é possível construir uma macro mais realista} combinando o melhor dos dois mundos?
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Deixar claro que é um artigo de síntese, não de modelo novo.
+% - Falar que a força dele é justamente organizar um campo disperso e ligar ACE e DSGE em uma narrativa coerente.
+
+% Slide: DSGE x ACE – o mapa mental do artigo
+\subsection{DSGE x ACE – o mapa mental}
+\begin{frame}{DSGE x ACE – o mapa mental do artigo}
+    \begin{itemize}
+        \item \textbf{Passo 1:} organizar as quatro críticas ACE aos DSGE (heterogeneidade, desequilíbrio, complexidade, racionalidade).
+        \item \textbf{Passo 2:} mostrar como os modelos K\&S, CATS, EURACE e Strategy-Switching lidam com cada uma delas.
+        \item \textbf{Passo 3:} avaliar o quanto esses modelos reproduzem “fatos estilizados” macroeconômicos.
+        \item \textbf{Passo 4:} discutir tentativas de síntese via modelos New Keynesian comportamentais e NK internamente racionais.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Você pode desenhar verbalmente um diagrama mental: de um lado DSGE, do outro ACE, e o artigo no meio como “ponte”.
+% - Ressaltar a honestidade intelectual dos autores: não é um panfleto anti-DSGE, é uma avaliação crítica, mas construtiva.
+
+% Slide: New Keynesian comportamentais
+\subsection{New Keynesian comportamentais}
+\begin{frame}{New Keynesian comportamentais}
+    \begin{itemize}
+        \item Ideia básica: \textbf{injetar comportamento “imperfeito”} dentro do arcabouço NK padrão.
+        \item Exemplos:
+        \begin{itemize}
+            \item Expectativas adaptativas ou heterogêneas em vez de totalmente racionais.
+            \item Regras simples de consumo e investimento (heurísticas) em vez de solução exata do problema dinâmico.
+        \end{itemize}
+        \item Resultado: modelos ainda resolvidos por técnicas DSGE, mas com \textbf{canais comportamentais} para volatilidade e desajustes.
+        \item Interpretação do artigo: caminho promissor, porém ainda tímido na direção da complexidade e da heterogeneidade “full ACE”.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Deixar claro que aqui o compromisso é com a “forma DSGE”, mas flexibilizando suposições de expectativas e decisão.
+% - Comentar que esses modelos são mais palatáveis para bancos centrais, porque preservam boa parte da estrutura NK.
+
+% Slide: Modelo NK internamente racional
+\subsection{Modelo NK internamente racional}
+\begin{frame}{Modelo NK internamente racional}
+    \begin{itemize}
+        \item Ponto de partida: trabalhos de Adam \& Marcet sobre \textbf{internal rationality}.
+        \item Agentes maximizam \textbf{dado o modelo mental que possuem} – mas esse modelo pode ser incompleto ou errado sobre o “verdadeiro” processo.
+        \item Em vez de onisciência, há \textbf{aprendizado e atualização}: expectativas são racionais “por dentro”, mas não necessariamente corretas “por fora”.
+        \item Dilaver et al. veem essa linha como tentativa de dar \textbf{microfundamentos mais realistas} à macro comportamental, sem abrir mão da linguagem NK.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Explicar com analogia: o agente é racional “dentro da bolha de conhecimento” dele, não em relação a todo o universo.
+% - Sugerir que isso conversa muito com a ideia de vieses e modelos mentais da economia comportamental.
+
+% Slide: Para onde vamos?
+\subsection{Para onde vamos?}
+\begin{frame}{Para onde vamos?}
+    \begin{itemize}
+        \item O artigo sugere que não há “modelo final”, mas \textbf{um programa de pesquisa}:
+        \begin{itemize}
+            \item ACE para capturar heterogeneidade, redes, desequilíbrios e dinâmica rica.
+            \item NK comportamentais/IR para manter estrutura analítica e dialogar com a prática de política econômica.
+        \end{itemize}
+        \item Desafio técnico: \textbf{conciliar complexidade com tratabilidade} – modelos ricos o suficiente, mas ainda estimáveis e comunicáveis.
+        \item Desafio conceitual: \textbf{aceitar a racionalidade limitada} de indivíduos e instituições, sem abandonar a ambição de prever e orientar políticas.
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Fechar essa seção destacando que o artigo não “mata” os DSGE, mas exige que eles convivam com modelos mais realistas.
+% - Ligar com a narrativa da racionalidade: saímos da ingenuidade, passamos pelo excesso de confiança, e agora tentamos um meio-termo humilde e empírico.
+
+% =========================
+% SEÇÃO 5 – CONCLUSÃO
+% =========================
+
+\section{Conclusão}
+
+\begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}\insertsectionhead\par
+        \color{oxfordblue}\noindent\rule{10cm}{1pt} \\
+        \LARGE{\faQuestionCircle}
+    \end{beamercolorbox}
+    \vfill
+\end{frame}
+
+% Slide: Racionalidade, modelos e mundo real
+\subsection{Racionalidade, modelos e mundo real}
+\begin{frame}{Racionalidade, modelos e mundo real}
+    \begin{itemize}
+        \item A história que contamos:
+        \begin{itemize}
+            \item Começamos admitindo que o ser humano \textbf{não é plenamente racional}.
+            \item Construímos modelos como se ele fosse.
+            \item A psicologia e a economia comportamental lembraram que os limites voltaram à cena.
+        \end{itemize}
+        \item O artigo de Dilaver, Jump \& Levine mostra a macro \textbf{saindo do conforto do DSGE puro} e experimentando modelos com agentes reais.
+        \item Em última análise, a pergunta não é só técnica: \textbf{que imagem de racionalidade queremos supor quando descrevemos sociedades inteiras?}
+    \end{itemize}
+\end{frame}
+
+% Notas do apresentador:
+% - Retomar em 1 minuto a linha do tempo: pré-racionalidade plena → homo economicus → Kahneman → crise dos DSGE → ACE e NK comportamentais.
+% - Fechar com um convite: mais do que uma disputa de modelos, é uma discussão sobre como enxergamos o ser humano na macroeconomia.
